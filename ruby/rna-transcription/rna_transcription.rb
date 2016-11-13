@@ -5,7 +5,7 @@ class Complement
 
     dna_strand = {'G' => 'C', 'C' => 'G', 'T' => 'A', 'A' => 'U'}
     if dna.chars.all? {|letter| dna_strand.include?(letter)}
-      dna.chars.map {|letter| dna_strand[letter]}
+      dna.chars.map {|letter| dna_strand[letter]}.join
     else
       ""
     end
