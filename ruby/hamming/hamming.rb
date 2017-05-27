@@ -2,11 +2,8 @@ module BookKeeping
   VERSION = 3
 end
 
-
 class Hamming
-
-  require 'pry'
-
+  
   def self.compute(strand_1, strand_2)
 
     if !strand_1.length.eql?(strand_2.length)
